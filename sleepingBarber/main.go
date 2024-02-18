@@ -8,7 +8,7 @@ import (
 	"github.com/fatih/color"
 )
 
-var seatingCapacity = 5
+var seatingCapacity = 10
 var arrivalRate = 100 
 var cutDuration = 1000 * time.Millisecond
 var timeOpen = 10 * time.Second
@@ -35,6 +35,7 @@ func main() {
 	shop.addBarber("Scary Frankie")
 	shop.addBarber("Voodo Karl")
 	shop.addBarber("Trogg 'The Log' Frogg")
+	shop.addBarber("Przemysław")
 
 	shopClosing := make(chan bool)
 	closed := make(chan bool)
